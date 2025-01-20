@@ -5,6 +5,8 @@ import { NotFoundException, BadRequestException } from '@nestjs/common';
 import { UserDTO, UserUpdateDTO } from '../dto/user.dto';
 import { UsersEntity } from '../entity/users.entity';
 
+
+// Pruebas para saber si cada controller esta bien
 describe('UsersController', () => {
   let controller: UsersController;
   
