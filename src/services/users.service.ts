@@ -12,6 +12,8 @@ constructor(
     private readonly userRepository: Repository<UsersEntity>,
 ){}
 
+
+// Crear usuario 
 public async createUser(body: UserDTO): Promise<UsersEntity> {
   try {
     return await this.userRepository.save(body);
@@ -27,7 +29,7 @@ public async createUser(body: UserDTO): Promise<UsersEntity> {
   
 }
 
-
+//buscar usuarios
 public async findUsers(): Promise<UsersEntity[]> {
   try {
     const users: UsersEntity[] = await this.userRepository.find();
