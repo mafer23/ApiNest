@@ -29,7 +29,11 @@ public async createUser(body: UserDTO): Promise<UsersEntity> {
   
 }
 
+<<<<<<< HEAD
 //buscar usuarios
+=======
+// Todos los Usuarios
+>>>>>>> hotfix/v1.0.1
 public async findUsers(): Promise<UsersEntity[]> {
   try {
     const users: UsersEntity[] = await this.userRepository.find();
@@ -45,7 +49,7 @@ public async findUsers(): Promise<UsersEntity[]> {
   }
 
 }
-
+//Por Usuario la busquedad
 public async findUserById(@Param('id') id:number): Promise<UsersEntity> {
   try {
     // Corregimos la consulta para vincular el 'id' correctamente
