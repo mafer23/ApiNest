@@ -1,6 +1,6 @@
 import { Body, Controller, Delete, Get, NotFoundException, Param, Post, Put } from '@nestjs/common';
-import { UserDTO, UserUpdateDTO } from 'src/dto/user.dto';
-import { UsersService } from 'src/services/users.service';
+import { UserDTO, UserUpdateDTO } from '../dto/user.dto';
+import { UsersService } from '../services/users.service';
 
 @Controller('users')
 export class UsersController {
@@ -31,6 +31,8 @@ export class UsersController {
   
     return user;
   }
+
+  
   @Put('edit/:id')
   public async updateUser(
     @Param('id') id:string,

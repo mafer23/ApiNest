@@ -1,8 +1,8 @@
 import { Injectable, Param } from '@nestjs/common';
 import { InjectRepository } from '@nestjs/typeorm';
-import { UserDTO, UserUpdateDTO } from 'src/dto/user.dto';
-import { UsersEntity } from 'src/entity/users.entity';
-import { ErrorManager } from 'src/utils/error.manager';
+import { UserDTO, UserUpdateDTO } from '../dto/user.dto';
+import { UsersEntity } from '../entity/users.entity';
+import { ErrorManager } from '../utils/error.manager';
 import { DeleteResult, Repository, UpdateResult } from 'typeorm';
 
 @Injectable()
